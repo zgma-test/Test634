@@ -1,0 +1,111 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "1999fb8d-489b-4786-8995-1049fcdbeff1": {
+        "id": "1999fb8d-489b-4786-8995-1049fcdbeff1",
+        "parent": null,
+        "name": "Test634",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "2aa797b8-93c5-4f34-9cb5-32c308f3de1c"
+        ],
+        "isRemovable": false,
+        "filePath": "Test634"
+      },
+      "2aa797b8-93c5-4f34-9cb5-32c308f3de1c": {
+        "id": "2aa797b8-93c5-4f34-9cb5-32c308f3de1c",
+        "parent": "1999fb8d-489b-4786-8995-1049fcdbeff1",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Test634/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "sqsMyQueue",
+            "config": {
+              "BatchSize": "10"
+            }
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "1999fb8d-489b-4786-8995-1049fcdbeff1",
+    "openFiles": [
+      "2aa797b8-93c5-4f34-9cb5-32c308f3de1c"
+    ],
+    "currentFileId": "2aa797b8-93c5-4f34-9cb5-32c308f3de1c",
+    "resources": {
+      "sqsMyQueue": {
+        "name": "sqsMyQueue",
+        "type": "SQS",
+        "config": {
+          "mode": 0,
+          "existing": false,
+          "name": "MyQueue",
+          "url": "https://sqs.us-east-1.amazonaws.com/318300609668/MyQueue",
+          "selectedRegion": "us-east-1",
+          "deliveryDelay": 0,
+          "deliveryDelayUnit": "seconds",
+          "useRedrivePolicy": false,
+          "useSSE": false,
+          "kmsCustomerMasterKey": "default",
+          "accountId": "318300609668",
+          "dataKeyReusePeriod": 5,
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": 30,
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": 4,
+          "messageRetentionPeriodUnit": "days",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": 0,
+          "deadLetterQueueName": ""
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "Test634",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1562661920589
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "Test634",
+      "url": "https://github.com/zgma-test/Test634"
+    }
+  }
+}
